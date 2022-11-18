@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --paracolor: hsl(228, 12%, 48%)
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: white;
+    min-width: 600px;
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.left{
+    width: 50%;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px;
+    row-gap: 24px;
+    text-align: left;
+}
+.prev{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.prev, .description{
+    color: var(--paracolor);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.right h3{
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    /* padding: 10p; */
+    gap: 24px;
+    align-items: center;
+}
+.cureent-price{
+    font-size: 36px;
+    font-family: 'Fraunces', serif;;
+    color: hsl(158, 36%, 37%);
+}
+
+.prices .pre-price{
+    text-decoration: line-through;
+    color: var(--paracolor);
+}
+
+button{
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: .7rem 1rem;
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 400px) {
+    .card{
+        flex-direction: column;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        width: 
+    }
+    
+}
