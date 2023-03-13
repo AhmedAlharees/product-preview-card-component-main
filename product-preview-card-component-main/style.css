@@ -21,22 +21,27 @@ body{
 
 .card{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
     background-color: white;
     min-width: 600px;
     width: 30%;
-    height: 50%;
+    /* height: 50%; */
     border-radius: 10px;
 }
 
 .left{
     width: 50%;
+    /* flex-basis: 200px; */
     background-image: url("images/image-product-desktop.jpg");
     background-size: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
 
+.left img{
+    min-height: 200px;
+    min-width: none;
 }
 
 .right{
@@ -65,7 +70,6 @@ body{
 .prices{
     display: flex;
     flex-direction: row;
-    /* padding: 10p; */
     gap: 24px;
     align-items: center;
 }
@@ -91,17 +95,22 @@ button{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition: .3s;
 }
 
-@media (max-width: 400px) {
+button:hover{
+    background-color: hsl(158, 35%, 22%);
+}
+
+@media (min-width: 610px) {
     .card{
-        flex-direction: column;
+        flex-direction: row;
     }
     .left{
-        display: none;
+        /* display: none; */
     }
     .right{
-        width: 
+        /* min-height;:  */
     }
     
 }
